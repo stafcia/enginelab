@@ -1,0 +1,38 @@
+<%- include ("../partials/header.ejs") %>
+    <div class="authentication">
+        <div class="container">
+            <div class="col-md-12 content-center">
+                <div class="row clearfix">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="company_detail">
+                            <h4 class="logo"><img src="assets2/images/logo.svg" alt="Logo"> EngineLab Manager</h4>
+                            <h3>Bienvenido al administador <strong>EngineLab</strong></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 offset-lg-1">
+                        <div class="card-plain">
+                            <div class="header">
+                                <h5>Iniciar Sesion</h5>
+                            </div>
+                            <form action="login" class="form" method="POST">
+                                <div class="input-group">
+                                    <input name="usuario" type="text" class="form-control" placeholder="Usuario">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-account-circle"></i></span>
+                                </div>
+                                <div class="input-group">
+                                    <input name="password" type="password" placeholder="Contraseña" class="form-control" />
+                                    <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
+                                </div>
+                                <div class="footer">
+                                    <button type="submit" class="btn btn-primary btn-round btn-block">Iniciar Sesión</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+    <%- include ("../partials/footer.ejs") %>
